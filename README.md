@@ -9,6 +9,8 @@ python3 Yd48.py
 
 ## Usage
 
+优酷页面 <a href="http://i.youku.com/i/UMTM4NTM5Nzc4OA==/">snh48club</a>
+
 python3 Yd48.py -t [Team Name] -p [youku playlist Pages number]  </br>
 
 eg. </br>
