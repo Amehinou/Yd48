@@ -13,6 +13,12 @@ python3 Yd48.py
 
 python3 Yd48.py -t [Team Name] -p [youku playlist Pages number]  </br>
 
+#### -t 搜索关键字
+<img src="https://cdn.earture.org/src/t.png">
+
+#### -p 下载页数
+<img src="https://cdn.earture.org/src/p.png">
+
 eg. </br>
 ### 下载BEJ48 TeamE 优酷视频列表第1页的所有公演 </br>
 
