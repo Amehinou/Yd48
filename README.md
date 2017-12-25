@@ -2,6 +2,8 @@
 ## 批量下载SNH48G 公演
 
 ## Install
+
+sudo apt-get install libxml2-dev libxslt-dev python-dev<br>
 pip3 install bs4 you-get lxml<br>
 git clone https://github.com/Amehinou/Yd48 </br>
 cd Yd48 </br>
