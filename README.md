@@ -59,13 +59,13 @@ eg. </br>
 ### 下载BEJ48 TeamE 优酷视频列表第1页的所有公演 </br>
 
 ```console
-python3 Yd48.py -t TeamE -p 1  </br>
+python3 Yd48.py -t TeamE -p 1  
 ```
 
 ### 下载 20171217 的所有公演 </br>
 
 ```console
-python3 Yd48.py -t 20171217 -p 1  </br>
+python3 Yd48.py -t 20171217 -p 1  
 ```
 
 ### 下载SHY48 优酷视频列表第2页的所有公演 </br>
