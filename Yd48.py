@@ -13,24 +13,39 @@ class Downloader(object):
         
     def download(self, href):
         os.system('you-get "http:{0}"'.format(href))
-
+              
     def go(self):
         soup = BeautifulSoup(open(self.elements, 'r'), 'lxml')
         urls = soup.find_all('a', class_ = 'video')
-        #print(urls)
-        p = Pool(4)
         for url in urls:
             print(url.get('title'))
-            p.apply_async(self.download, args = (url['href'],))
-        p.close()
-        p.join()
+        print("===============================================================")
+
+        sign = input("确认下载以上公演? (yes/no):")
+
+        if sign == "yes" or sign == "y" :
+
+            p = Pool(4)
+            for url in urls:
+
+                p.apply_async(self.download, args = (url['href'],))
+
+            p.close()
+            p.join()
+        else: 
+            print("已取消下载！")
+            sys.exit()
+        
+
+        
 
 def getList(searchString,page):  
-    textmod = {'q':searchString,'page':page}
-    textmod = parse.urlencode(textmod)
+
+    youku_get = {'q':searchString,'page':page}
+    youku_get = parse.urlencode(youku_get)
     header_dict = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'}
     url = 'http://i.youku.com/i/UMTM4NTM5Nzc4OA==/videos'
-    req = request.Request(url='%s%s%s' % (url,'?',textmod),headers=header_dict)
+    req = request.Request(url='%s%s%s' % (url,'?',youku_get),headers=header_dict)
     res = request.urlopen(req)
     res = res.read()
 
@@ -74,7 +89,8 @@ def main():
     getList(args.team,args.page)
     print("即将为您下载以下公演:")
     print("===============================================================")
-    downloader = Downloader("48.list")
+
+    downloader = Downloader("48.list")  
     downloader.go()
 
 if __name__ == '__main__':
