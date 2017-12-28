@@ -51,7 +51,6 @@ GNZ48 TeamZ《2017·爱你·一起》跨年特殊公演（20161231 夜场）
 python3 Yd48.py -t [Team Name] -p [youku playlist Pages number]  </br>
 
 #### -t 搜索关键字
-<img src="https://cdn.earture.org/src/t.png">
 
 #### -p 下载页数
 <img src="https://cdn.earture.org/src/p.png">
@@ -59,13 +58,18 @@ python3 Yd48.py -t [Team Name] -p [youku playlist Pages number]  </br>
 eg. </br>
 ### 下载BEJ48 TeamE 优酷视频列表第1页的所有公演 </br>
 
+```console
 python3 Yd48.py -t TeamE -p 1  </br>
-
+```
 
 ### 下载 20171217 的所有公演 </br>
 
+```console
 python3 Yd48.py -t 20171217 -p 1  </br>
+```
 
 ### 下载SHY48 优酷视频列表第2页的所有公演 </br>
 
+```console
 python3 Yd48.py -t SHY48 -p 2 
+```
