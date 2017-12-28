@@ -7,9 +7,9 @@ sudo apt-get install libxml2-dev libxslt-dev python-dev<br>
 pip3 install bs4 you-get lxml<br>
 git clone https://github.com/Amehinou/Yd48 </br>
 cd Yd48 </br>
-python3 Yd48.py -t 联合公演 -p 1
+python3 Yd48.py -t 特殊公演 -p 1
 ```console
-air:Yd48 sakura$ python3 Yd48.py -t 特殊公演 -p 1
+$ python3 Yd48.py -t 特殊公演 -p 1
 
     
         欢迎使用SNH48G公演批量下载程序 Yd48 ！
@@ -59,17 +59,17 @@ eg. </br>
 ### 下载BEJ48 TeamE 优酷视频列表第1页的所有公演 </br>
 
 ```console
-python3 Yd48.py -t TeamE -p 1  
+$ python3 Yd48.py -t TeamE -p 1  
 ```
 
 ### 下载 20171217 的所有公演 </br>
 
 ```console
-python3 Yd48.py -t 20171217 -p 1  
+$ python3 Yd48.py -t 20171217 -p 1  
 ```
 
 ### 下载SHY48 优酷视频列表第2页的所有公演 </br>
 
 ```console
-python3 Yd48.py -t SHY48 -p 2 
+$ python3 Yd48.py -t SHY48 -p 2 
 ```
